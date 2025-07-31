@@ -7,8 +7,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import cafe.adriel.voyager.navigator.bottomSheet.BottomSheetNavigator
+import cafe.adriel.voyager.navigator.Navigator
 import com.scaffold.App
+import com.scaffold.screens.hello.HelloScreen
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterialApi::class)
@@ -16,7 +17,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContent {
-            BottomSheetNavigator {
+            Navigator(screen = HelloScreen) {
                 App()
             }
         }
@@ -27,7 +28,7 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun AppAndroidPreview() {
-    BottomSheetNavigator {
+    Navigator(screen = HelloScreen) {
         App()
     }
 }
