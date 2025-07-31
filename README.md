@@ -1,6 +1,6 @@
 # Table of content
 1. [KMP](#kmp)
-2. [BottomBar & FloatingActionButton](#bottombar&floatingactionbutton)
+2. [BottomBar & FloatingActionButton](#bottombar & floatingactionbutton)
 3. [Build With](#build-with)
 4. [Demo Video](#demo-video)
 
