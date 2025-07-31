@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<resources>
+    <string name="hello_app">Hello, Welcome to my app</string>
+    <string name="side_menu">Side Menu</string>
+    <string name="languages">Language page</string>
+    <string name="settings">Setting</string>
+    <string name="sebha">Sebha</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<resources>
+    <string name="hello_app">مرحباً بكم في تطبيقي</string>
+    <string name="side_menu">القائمة الجانبية</string>
+    <string name="languages">صفحة اللغات</string>
+    <string name="settings">الإعدادات</string>
+    <string name="sebha">السبحة</string>
+</resources>
