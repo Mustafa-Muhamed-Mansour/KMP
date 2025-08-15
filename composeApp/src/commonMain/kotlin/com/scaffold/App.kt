@@ -74,13 +74,9 @@ fun App() {
                         onClick = { selectItem = index },
                         content = {
                             Column(
-//                                modifier = Modifier
-//                                    .padding(horizontal = 8.dp, vertical = 1.dp),
                                 horizontalAlignment = Alignment.CenterHorizontally
                             ) {
                                 TemplateIcon(
-//                                    modifier = Modifier
-//                                        .size(size = 30.dp),
                                     imageVector = tab.icon,
                                     contentDescription = tab.title,
                                     tint = Color.Black
