@@ -76,9 +76,11 @@ koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", ver
 mvvm-core = { module = "dev.icerock.moko:mvvm-core", version.ref = "mvvmCore" }
 
  #Voyager
-   #To navigate between (pages or screens) and (bottom sheet)
+   #To navigate between (pages or screens) and (bottom sheet) and (tab navigator)
 voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
 bottom-sheet = { module = "cafe.adriel.voyager:voyager-bottom-sheet-navigator", version.ref = "voyager" }
+tab-navigator = { module = "cafe.adriel.voyager:voyager-tab-navigator", version.ref = "voyager" }
+
 
 
 [plugins]
