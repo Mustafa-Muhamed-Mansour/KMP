@@ -77,6 +77,8 @@ fun App() {
                                 horizontalAlignment = Alignment.CenterHorizontally
                             ) {
                                 TemplateIcon(
+//                                    modifier = Modifier
+//                                        .size(size = 30.dp),
                                     imageVector = tab.icon,
                                     contentDescription = tab.title,
                                     tint = Color.Black
