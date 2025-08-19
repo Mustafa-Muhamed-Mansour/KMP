@@ -58,7 +58,6 @@ junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.r
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 
 
-
 #Lifecycle & Kotlin Serialization
 androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }

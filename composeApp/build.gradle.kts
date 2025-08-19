@@ -49,6 +49,7 @@ kotlin {
             implementation(libs.koin.android)
             implementation(libs.koin.androidx.compose)
         }
+
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -84,9 +85,7 @@ kotlin {
             implementation(libs.koin.compose)
             implementation(libs.koin.compose.viewmodel)
         }
-
         commonTest.dependencies {
-
             // Testing
             implementation(libs.kotlin.test)
             implementation(kotlin("test-annotations-common"))
