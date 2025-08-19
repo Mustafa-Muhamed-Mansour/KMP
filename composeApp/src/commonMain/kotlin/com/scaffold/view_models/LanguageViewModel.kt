@@ -20,7 +20,7 @@ class LanguageViewModel(
         fetchLanguages()
     }
 
-    private fun fetchLanguages() = viewModelScope.launch {
+    fun fetchLanguages() = viewModelScope.launch {
         _uiState.update { LanguageStates(isLoading = true) }
         val response = languageRepository.fetchAllLanguages()
         if (response.isSuccess) {

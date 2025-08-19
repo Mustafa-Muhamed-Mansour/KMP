@@ -1,7 +1,9 @@
+@file:OptIn(ExperimentalComposeLibrary::class)
+
+import org.jetbrains.compose.ExperimentalComposeLibrary
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -70,21 +72,29 @@ kotlin {
             // ViewModel
             implementation(libs.mvvm.core)
 
-            // Feather & Tabler Icons
-            implementation(libs.father.icons)
+            // Tabler Icons
             implementation(libs.tabler.icons)
 
-            // Voyager to navigate (between pages or screens) and (bottom sheet)
+            // Voyager to navigate (between pages or screens)
             implementation(libs.voyager.navigator)
-            implementation(libs.bottom.sheet)
 
 
             // Koin to dependency injection
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
             implementation(libs.koin.compose.viewmodel)
-//            implementation(libs.androidx.lifecycle.viewmodel.koin)
         }
+
+        commonTest.dependencies {
+
+            // Testing
+            implementation(libs.kotlin.test)
+            implementation(kotlin("test-annotations-common"))
+            implementation(libs.assertk)
+            implementation(compose.uiTest)
+            implementation(libs.mockk)
+        }
+
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutines.swing)
@@ -123,6 +133,7 @@ android {
 }
 
 dependencies {
+    testImplementation(libs.junit.jupiter)
     debugImplementation(compose.uiTooling)
 }
 
