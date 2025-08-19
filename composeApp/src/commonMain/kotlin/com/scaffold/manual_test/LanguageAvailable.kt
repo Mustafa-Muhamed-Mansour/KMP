@@ -4,6 +4,7 @@ fun languageAvailable(language: String): String {
     return language
 }
 
+
 //Here test for function (by using Manual Test)
 fun testLanguageAvailable(): Boolean {
     val inputLanguage = "Arabic"
