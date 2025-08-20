@@ -1,4 +1,4 @@
-# 👋Table of content
+#  Table of content
 1. [KMP](#kmp)
 2. [BottomBar-FloatingActionButton](#bottombar-floatingactionbutton)
 3. [NavigationDrawer](#navigationdrawer)
