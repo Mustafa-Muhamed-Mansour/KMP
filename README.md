@@ -1,4 +1,3 @@
-# Table of content
 1. [Screenshots](#screenshots)
 2. [Build With](#build-with)
 3. [Demo Video](#demo-video)
