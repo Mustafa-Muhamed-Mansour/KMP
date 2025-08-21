@@ -86,12 +86,12 @@ kotlin {
             implementation(libs.koin.compose.viewmodel)
         }
         commonTest.dependencies {
-            // Testing
             implementation(libs.kotlin.test)
             implementation(kotlin("test-annotations-common"))
             implementation(libs.assertk)
             implementation(compose.uiTest)
             implementation(libs.mockk)
+            implementation("app.cash.turbine:turbine:1.2.1")
         }
 
         desktopMain.dependencies {
@@ -134,6 +134,8 @@ android {
 dependencies {
     testImplementation(libs.junit.jupiter)
     debugImplementation(compose.uiTooling)
+
+    testImplementation("app.cash.turbine:turbine:1.2.1")
 }
 
 compose.desktop {
